@@ -89,7 +89,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  border: 1px solid grey;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -131,16 +130,56 @@ table {
 * {
   box-sizing: border-box;
 }
+img {
+  max-width: 100%;
+  max-height: auto;
+}
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+body {
+  padding: 0 5% 5% 5%;
+}
+header {
+  height: 90vh;
+  font-size: 2rem;
 }
 header nav {
   display: flex;
   justify-content: flex-end;
 }
 header nav a {
-  margin: 3%;
+  margin: 3% 0 3% 3%;
   text-decoration: none;
   color: black;
+}
+header .headerContent {
+  background: lightsteelblue;
+  padding: 3%;
+}
+header .headerContent .headerImage {
+  width: 30%;
+}
+header .headerContent h1 {
+  font-size: 5rem;
+}
+.middleContentWrapper {
+  font-size: 2rem;
+  display: flex;
+}
+.middleContentWrapper section {
+  width: 50%;
+}
+.bottomContent {
+  font-size: 2rem;
+}
+.bottomContent .workItems {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
+  font-size: 1.5rem;
+  text-align: center;
 }
