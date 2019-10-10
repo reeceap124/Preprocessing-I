@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	// border: 1px solid grey;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -50,10 +51,127 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
+
+img {
+	max-width: 100%;
+	max-height: auto;
+}
+
+@fontSize: 2rem;
+@backgroundColor: gainsboro;
+
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+body {
+	padding: 0 10% 5% 10%;
+}
+.divider {
+	border-top: 1px solid gray;
+	width: 100%;
+}
+header{
+	font-size: @fontSize;
+	nav{
+		display: flex;
+		justify-content: flex-end;
+		a{
+			margin: 3% 0 3% 3%;
+			text-decoration: none;
+			color: black;
+		}
+	} //end nav
+	.headerContent {
+		display: flex;
+		flex-direction: column;
+		background: @backgroundColor;
+		padding: 3%;
+		height: 80vh;
+		.headerImage {
+			width: 30%;
+		}
+		
+		h1{
+			font-size: 5rem;
+			margin: 1% 0;
+		}
+
+		.divider {
+			margin: 2% 0;
+		}
+
+		.bottomHeaderContent{
+			p {
+				margin: 0 0 3% 0;
+			}
+		}
+
+		.teamUpButton {
+			text-decoration: none;
+			font-size: 2.25rem;
+			color: white;
+			background: gray;
+			padding: 1%;
+			border-radius: 2%;	
+		}
+
+	} //end header content
+} //end header
+
+.middleContentWrapper {
+	font-size: @fontSize;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 5%;
+	
+	section {
+		width: 45%;
+		h2{
+			margin-bottom: 3%;
+			font-weight: bold;
+		}
+	}
+
+	li {
+		
+		padding: 1%;
+		
+	}
+
+	.dark {
+		background: @backgroundColor;
+	}
+
+}
+
+.bottomContent {
+	font-size: @fontSize;
+	margin: 5% 0;
+	
+	h2 {
+		font-weight: bold;
+		margin: 2% 0;
+	}
+	.workItems {
+		display: flex;
+		justify-content: space-between;
+		padding: 1%;
+		
+	}
+
+	.dark {
+		background: @backgroundColor;
+	}
+}
+
+footer {
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 2%;
+}
