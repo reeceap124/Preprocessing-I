@@ -140,7 +140,11 @@ body {
   font-size: 62.5%;
 }
 body {
-  padding: 0 5% 5% 5%;
+  padding: 0 10% 5% 10%;
+}
+.divider {
+  border-top: 1px solid gray;
+  width: 100%;
 }
 header {
   height: 90vh;
@@ -156,7 +160,7 @@ header nav a {
   color: black;
 }
 header .headerContent {
-  background: lightsteelblue;
+  background: gainsboro;
   padding: 3%;
 }
 header .headerContent .headerImage {
@@ -164,22 +168,49 @@ header .headerContent .headerImage {
 }
 header .headerContent h1 {
   font-size: 5rem;
+  margin-bottom: 1%;
+}
+header .headerContent .divider {
+  margin: 2% 0;
+}
+header .headerContent .teamUpButton {
+  font-size: 2.25rem;
+  color: white;
+  background: gray;
+  border-radius: 2%;
 }
 .middleContentWrapper {
   font-size: 2rem;
   display: flex;
+  justify-content: space-between;
 }
 .middleContentWrapper section {
-  width: 50%;
+  width: 45%;
+}
+.middleContentWrapper section h2 {
+  margin-bottom: 3%;
+  font-weight: bold;
+}
+.middleContentWrapper li {
+  border: 1px solid grey;
+  padding: 1%;
+}
+.middleContentWrapper .dark {
+  background: gainsboro;
 }
 .bottomContent {
   font-size: 2rem;
+  margin: 3% 0;
 }
 .bottomContent .workItems {
   display: flex;
   justify-content: space-between;
 }
+.bottomContent .dark {
+  background: gainsboro;
+}
 footer {
   font-size: 1.5rem;
   text-align: center;
+  margin: 2%;
 }
